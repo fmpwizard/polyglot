@@ -1,0 +1,60 @@
+<lift:surround with="admin" at="content">
+
+<script type="text/javascript">
+$(document).ready(function(){
+  $("a.close").click(function(){
+    $("div.alert").hide();
+  });
+});
+</script>
+
+
+  	<h1 class="resourceGroup">Delete Resource</h1>
+  	<hr/>
+  	<div lift="localizations.deleteResource">
+	<form class="lift:LocalizationSnippet.deleteResourceForm?form=post">
+	
+		<div class="alert  alert-info" >
+	   		
+	 		 Information for the resource to be deleted is given below
+	 		 <a class="close" data-dismiss="alert" href="#">&times;</a>
+	  	 </div>
+	  	 
+			 	 
+		<table class="table table-condensed" >
+		
+			<tr class="resourceNameRow" >
+			        <td > <b>Resource Group: </b></td>
+			        <td class="resourceName">  <label id="resourceGroupName"></label></td>
+			       
+			</tr>
+			
+		 	<tr class="resourceNameRow" >
+			        <td > <b>Resource Name: </b></td>
+			        <td class="resourceName">  <label  id="resourceNameInput" ></label></td>
+			       
+			</tr>
+			 
+			 <tbody> 
+			  
+			    
+			      <tr class="languageEntry">
+			        <td class="languageTypeColumn"><b class="language" >en</b></td>
+			        <td class="languageValueColumn">Button</td>   
+			    </tr>
+			    
+			</tbody>   
+		
+		
+		 </table>
+	 	 <div align="center">
+	 	 <button class="btn btn-primary" type="submit" id="delete" onclick="return window.confirm('Confirm to delete?');">Delete</button>
+	 	 <button class="btn" type="button" id="cancel">Cancel</button>
+	 	  </div>
+	</form>
+	
+	</div>
+	
+
+  
+</lift:surround>

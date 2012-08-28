@@ -1,0 +1,66 @@
+<lift:surround with="admin" at="content">
+
+<script type="text/javascript">
+$(document).ready(function(){
+  $("a.close").click(function(){
+    $("div.alert").hide();
+  });
+});
+</script>
+
+
+  	<h1 class="resourceGroup">Delete Resource</h1>
+  	<hr/>
+  	<div lift="localizations.deleteResource">
+	<form class="lift:LocalizationSnippet.deleteResourceForm?form=post">
+	
+		<div class="alert  alert-info" >	
+			 <a class="close" data-dismiss="alert" href="#">&times;</a>
+	 		 Information for the resource to be deleted is given below.<br/><br/>
+	 		 ATTENTION : If you delete a resource, all of the localizations that belong to that resource are also be deleted.
+	 		
+	  	 </div>
+	  	 
+			 	 
+		 <div class="accordion" id="accordion2" >
+	            <div class="resourceGroup accordion-group">
+	              <div class="accordion-heading">
+	                <h3><label id="resourceGroupName" class="accordion-toggle" >
+	                  Collapsible Group Item #1 
+	                </label></h3> 
+	                   
+	              </div>
+	              
+	              <div id="collapseOne" class="accordion-body collapse in">
+	                             
+		                <div class="resource accordion-inner">
+		                	                	
+				                 <b >Resource Name :</b> <label id="resourceName">name</label> <br/><br/>
+				                 <b >Localizations :</b><br/>
+				                 
+				                 
+				                 <ul class="localizationEntry">
+								  <li><b id="language">en</b> <b >:</b> <label id="localization">Add</label></li>
+	  							 </ul>
+				                 
+				                
+						      
+		                </div>
+	
+	                           	
+	              </div>
+	              
+	            </div>
+	
+		</div>
+	 	 <div align="center">
+	 	 <button class="btn btn-primary" type="submit" id="delete" onclick="return window.confirm('Confirm to delete?');">Delete</button>
+	 	 <button class="btn" type="button" id="cancel">Cancel</button>
+	 	  </div>
+	</form>
+	
+	</div>
+	
+
+  
+</lift:surround>

@@ -1,0 +1,33 @@
+
+<lift:surround with="admin" at="content" >
+
+<form lift="localizations.viewResource">
+
+	<h1 class="resourceGroup">Resource</h1>
+	<hr/>
+	
+	<label>Resource Name:</label> <label class="resourceName" >Button</label> 
+	
+	  <table class="table table-condensed table-striped"  >
+	 	
+		 
+		 <tbody> 
+		    <tr class="resource">
+		        <td ><b><label class="resourceLanguage">Localization Language</label>  </b> </td>
+		        <td class="localization">Localization</td>
+		       
+		    </tr>
+		    
+		      <tr class="languageEntry">
+		        <td class="languageTypeColumn"><b class="language">en</b></td>
+		        <td class="languageValueColumn">Button</td>   
+		    </tr>
+		    
+		</tbody>   
+		 <br/>
+		 <button class="btn" type="button" id="backToResourceGroup" onclick="">
+	 		 Go back to Resource Group
+		 </button>
+	 </table>
+ </form>		
+</lift:surround>

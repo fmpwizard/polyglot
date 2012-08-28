@@ -1,0 +1,167 @@
+/* -----------------------------------------------------------------------------
+	Template Name : CoolBlue
+	Template Code : S-0031
+	Version : 1.0
+	Author : Erwin Aligam
+	Author URI : http://www.styleshout.com/
+	Last Date Modified : March 10, 2010
+ -------------------------------------------------------------------------------- */
+
+/* ------------------------------------------------------------------------------
+    G E N E R A L
+--------------------------------------------------------------------------------- */
+
+/* form elements */
+form {
+	margin: 10px 25px 10px 25px;
+	padding: 10px 25px 25px 25px;
+    background: #F3F4F5;
+    border: 1px solid #E2E4E7;
+	width: 477px;
+}
+form p {
+	border-bottom: 1px solid #E6E6E6;
+	padding: 12px 0 5px 0;	margin: 0;	
+	color: #2C76A6;
+}
+.regularForm{
+	margin: 10px 25px 10px 25px;
+	padding: 10px 25px 25px 25px;
+    background: #FFFFFF;
+    border: 1px solid #FFFFFF;
+	width: 477px;
+}
+
+/* ------------------------------------------------------------------------------
+    L A Y O U T
+--------------------------------------------------------------------------------- */
+
+/* header */
+#header-wrap {
+  float: left;
+  height: 100px;
+  width: 100%;
+  background: url(/admin/images/header-bg.jpg) repeat-x;
+}
+#header {
+  position: relative;
+  margin: 0 auto;
+  width: 1000px;
+}
+
+#header h1#logo-text { margin: 0; padding: 0; }
+#header h1#logo-text a {
+	position: absolute;
+	margin: 0; padding: 0 5px 0 0;
+	font: bold 55px 'Trebuchet MS', 'Helvetica Neue', Arial, Sans-Serif;
+	letter-spacing: -4px;
+	color: #333;
+	text-decoration: none;
+
+  	/* change the values of top and left to adjust the position of the logo*/
+	top: 82px; left: 25px;
+}
+#header p#slogan {
+	position: absolute;
+	margin: 0; padding:  0 5px 0 0;
+	font-family: 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, Sans-Serif;
+	font-weight: bold;
+	font-size: 11px;
+	line-height: 1.8em;
+	font-style: normal;
+	letter-spacing: -.5px;
+	color: #0d6684;
+
+	/* change the values of top and left to adjust the position */
+	top: 142px; left: 30px;
+}
+
+
+/*  navigation  */
+#header #nav {
+	position: absolute;
+	left: 15px;	top: 25px;
+	margin: 0; padding: 0;
+	width: 750px;
+}
+#header #nav ul {
+	float: left;	
+	list-style: none;
+	margin: 0; padding: 0;
+	height: 45px;
+}
+#header #nav ul li {
+	float: left;
+	margin: 0; padding: 0;			
+}
+#header #nav ul li a {
+	float:left;
+	margin: 0;
+	padding: 0 15px 29px 15px;
+	color: #baa7a7;
+	font: bold 12px 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, Sans-Serif;
+}
+#header #nav ul li a:hover, 
+#header #nav ul li a:active {
+	border: none;
+	color: #fff;
+}
+#header #nav ul li#current a {
+	background: transparent url(/admin/images/current.gif) no-repeat center bottom;
+	color: #fff;
+}
+
+/* pagenavigation */
+.navigation {
+	margin: 10px 20px; padding: 0;
+	width: 560px;
+}
+.navigation a:link,
+.navigation a:visited {
+	float: left;
+	display: block;
+	margin: 10px 10px 0 0;
+	padding: 5px 7px;
+	text-transform: lowercase;
+	text-decoration: none;
+	font-weight: bold;
+	color: #fff;
+	background: #2C76A6;
+	border-width: 1px;
+  	border-style: solid;
+  	border-color: #86BBDF #245F86 #245F86 #86BBDF;
+}
+.navigation a:hover {
+   background: #FF3399;
+   border-width: 1px;
+  	border-style: solid;
+	border-color: #FF75BA #EA0075 #EA0075 #FF75BA;
+}
+
+/* ------------------------------------------------------------------------------
+		M I S C
+--------------------------------------------------------------------------------- */
+
+/* alignment classes & additional classes */
+.float-left  { float: left; }
+.float-right { float: right; }
+.align-left  { text-align: left; }
+.align-right { text-align: right; }
+.no-border { border: none; }
+.no-bg {	background: none; }
+
+/* clearing */
+.fix {
+	clear: both;
+	height: 1px;
+	margin: -1px 0 0;
+	overflow: hidden;
+}
+.clear {	display:inline-block; }
+.clear:after {
+	display:block;
+	visibility:hidden;
+	clear:both;
+	height:0;
+	content: " ";
+}  

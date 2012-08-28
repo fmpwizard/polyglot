@@ -1,0 +1,79 @@
+<lift:surround with="admin" at="content">
+<script type="text/javascript" src="http://openclassifieds.googlecode.com/svn-history/r119/branches/2.0/themes/twitter/js/bootstrap-transition.js"></script>
+<script src="/js/bootstrap-collapse.js" type="text/javascript"></script> 
+
+<script>
+$(".accordion-group").collapse()
+</script>
+  
+	 
+<div lift="localizations.searchResults">
+
+	 <h1>Localization Search</h1>
+	 <hr/>
+	 
+	 <a class="btn btn-mini" id="localizationsLink" href="#"> Back to Localizations</a>
+	 <div align="center">
+		 <form action="" class="regularForm lift:LocalizationSnippet.searchForm?form=post">
+			 <div class="input-append " align="center">
+		     	<input  name="searchInput" id="appendedInputButton" size="16" type="text" placeholder="" />
+		     	<button class="btn searchButton" type="submit" title="Search"><i class="icon-search"></i></button>
+			 </div>
+		 </form>
+	 </div>
+	 <br/>
+	 <div align="center"><label  id="resultLabel"></label><br/></div>
+	 
+	
+	 
+	  <br/> <br/> 
+	 <div class="accordion" id="accordion2" >	 
+	            <div class="resourceGroup accordion-group">
+	            
+	              <div class="accordion-heading">
+	                <h3><a class="resourceGroupName accordion-toggle" data-target="accordion-group" data-toggle="accordion-group" data-parent="#accordion2" href="#collapse">
+	                  Collapsible Group Item #1 
+	                </a></h3> 
+	                   <div class="btn-toolbar">
+ 						   <div class="btn-group">
+    
+	                          &nbsp;&nbsp; 
+	                          <a class="editResourceGroupLink btn " href="" title="Edit Resource Group"><i class="icon-pencil"></i>Edit</a>
+	                          &nbsp;&nbsp; 
+	  						  <a href="#" class="deleteResourceGroupLink btn " title="Delete Resource Group"><i class="icon-trash"></i>Delete</a>
+	  						  &nbsp;&nbsp; 
+	                          <a class="newResourceLink btn btn-success" href="" title="Add a new resource to this resource group "><i class="icon-plus-sign"></i>Add New Resource</a>
+	             			</div>
+						</div>
+	             			
+	              </div>
+	              
+	              <div id="collapseOne" class="accordion-body collapse in">
+	                             
+		                <div class="resource accordion-inner">
+		                	                	
+				                 <b >Resource Name :</b> <label class="localizationName">name</label> <br/><br/>
+				                 <b >Localizations :</b><br/>
+				                 
+				                 
+				                 <ul class="localizationEntry">
+								  <li><b class="language">en</b> <b >:</b> <label class="localization">Add</label></li>
+	  							</ul>
+				                 
+				                                      
+				                  <a href="#" class="editLink " title="Edit Resource"><i class="icon-pencil"></i></a>
+				                 &nbsp;&nbsp;
+							      <a href="#" class="deleteLink  " title="Delete Resource"><i class="icon-trash"></i></a>
+						      
+		                </div>
+	
+	                           	
+	              </div>
+	              
+	            </div>
+	
+		</div>
+
+</div>
+
+</lift:surround>
